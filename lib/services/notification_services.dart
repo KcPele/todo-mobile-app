@@ -52,7 +52,7 @@ class NotifyHelper {
     if (notificationResponse.payload != null) {
       debugPrint('notification payload: $payload');
     } else {
-      print("Notification Done");
+      print("Notification Done.");
     }
     Get.to(() => Container(
           color: Colors.white,
