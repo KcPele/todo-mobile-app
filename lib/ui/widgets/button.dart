@@ -1,4 +1,5 @@
 import 'package:flutter/cupertino.dart';
+import 'package:flutter/material.dart';
 import 'package:flutter/src/widgets/container.dart';
 import 'package:flutter/src/widgets/framework.dart';
 import 'package:todoapp/ui/theme.dart';
@@ -13,10 +14,16 @@ class MyButton extends StatelessWidget {
     return GestureDetector(
       onTap: onTap,
       child: Container(
-        width: 100,
+        width: 120,
         height: 60,
         decoration: BoxDecoration(
             borderRadius: BorderRadius.circular(20), color: primaryClr),
+        child: Center(
+          child: Text(
+            label,
+            style: TextStyle(color: Color.fromARGB(255, 255, 255, 255)),
+          ),
+        ),
       ),
     );
   }
